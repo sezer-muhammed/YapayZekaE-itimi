@@ -1,0 +1,233 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{Yapay Zeka Eğitimi}
+\fancyfoot[L]{Muhammed Sezer \& Şevval B. Dikkaya}
+\fancyfoot[R]{\thepage}
+
+\title{Ders Yol Haritası}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\section{Ders Yol Haritası}
+
+\begin{enumerate}
+    \item Giriş (1 saat)
+    \begin{itemize}
+        \item Yapay zeka, makine öğrenimi ve derin öğrenme kavramlarının tanıtılması
+        \begin{itemize}
+            \item Yapay zeka: İnsan gibi düşünme ve öğrenme yeteneğine sahip bilgisayar sistemleri
+            \item Makine öğrenimi: Yapay zekanın alt dalı olarak, veri ve deneyimle otomatik olarak öğrenen ve gelişen algoritmalar
+            \item Derin öğrenme: Makine öğreniminin alt dalı olarak, büyük veri kümesinden karmaşık özellikler öğrenebilen ve hiyerarşik öğrenme sağlayan yapay sinir ağları temelli algoritmalar
+        \end{itemize}
+        \item Yapay zeka uygulama alanları ve örnekler
+        \begin{itemize}
+            \item Görüntü işleme: Görüntü sınıflandırma, nesne tanıma ve yüz tanıma gibi görsel problemler için derin öğrenme algoritmaları kullanılır.
+            \item Doğal dil işleme: Metin analizi, duygu analizi ve metin sınıflandırma gibi dil temelli problemler için makine öğrenimi ve derin öğrenme algoritmaları kullanılır.
+            \item Ses işleme: Ses tanıma, konuşma tanıma ve ses sınıflandırma gibi sesle ilgili problemler için derin öğrenme algoritmaları kullanılır.
+            \item Oyunlar ve strateji: Satranç ve Go gibi oyunlarda en iyi hamleleri belirlemek için yapay zeka algoritmaları kullanılır.
+            \item Tıp ve sağlık: Hastalık teşhisi, tıbbi görüntü analizi ve kişiselleştirilmiş tedavi önerileri için yapay zeka algoritmaları kullanılır.
+            \item Otomotiv: Otonom araçlar ve sürüş destek sistemleri için yapay zeka ve derin öğrenme algoritmaları kullanılır.
+        \end{itemize}
+        \item Yapay zeka türleri ve faydaları
+        \begin{itemize}
+            \item Gözetimli öğrenme: Etiketli veri kullanarak öğrenen ve doğru tahminlerde bulunmayı amaçlayan algoritmalar. Özellikle sınıflandırma ve regresyon problemlerinde başarılıdır.
+            \item Gözetimsiz öğrenme: Etiketli veri olmadan verinin yapısal özelliklerini öğrenen algoritmalar. Kümeleme, boyut azaltma ve veri yoğunluğu tahmini gibi problemlerde kullanılır.
+            \item Takviyeli öğrenme: Belirli bir hedefe yönelik hareketler yaparak deneme yanılma yöntemiyle öğrenen algoritmalar. En iyi eylemleri seçerek ödül mekanizmasıyla çalışır. Oyunlar, robotik ve gerçek zamanlı karar verme problemlerinde kullanılır.
+            \item Yarı-gözetimli öğrenme: Hem etiketli hem de etiketsiz veri kullanarak öğrenen algoritmalar. Büyük veri kümesinde küçük etiketli veri bulunan durumlarda başarılıdır.
+            \item Aktarım öğrenimi: Önceden eğitilmiş bir modelin bilgisi ve ağırlıklarının, yeni ve benzer bir problem için kullanılması. Hızlı öğrenme ve daha az etiketli veri gereksinimi sağlar.
+        \end{itemize}
+        \item Genel kavramlar ve terminoloji
+        \begin{itemize}
+            \item Özellik mühendisliği: Algoritmanın öğrenmesi için veriyi uygun şekilde temsil etme ve ön işleme yapma süreci.
+            \item Hiperparametre ayarlama: Yapay zeka modelinin performansını en üst düzeye çıkarmak için algoritmanın kontrol parametrelerini seçme ve ayarlama süreci.
+            \item Model doğrulama ve değerlendirme: Eğitilmiş yapay zeka modelinin performansını ölçme ve değerlendirme süreci. K-Fold çapraz doğrulama, doğruluk, hatırlama ve F1 skoru gibi metrikler kullanılır.
+        \end{itemize}
+    \end{itemize}
+
+
+    \item Regresyon (4 saat)
+    \begin{itemize}
+        \item Doğrusal regresyon ve lojistik regresyonun temelleri
+        \begin{itemize}
+            \item Doğrusal regresyon: Sürekli değerleri tahmin etmek için kullanılan bir regresyon türü
+            \item Lojistik regresyon: İkili sınıflandırma problemleri için kullanılan bir regresyon türü
+            \item Regresyon optimizasyonu: Maliyet fonksiyonunu minimize ederek regresyon modelinin ağırlıklarını ve önyargılarını ayarlama süreci
+        \end{itemize}
+        \item Regresyon modellerinde türev ve backpropagation
+        \begin{itemize}
+            \item Türev: Maliyet fonksiyonunun değişkenlere göre değişim hızı, optimizasyon için kullanılır
+            \item Regresyon optimizasyonunda türevin rolü: Ağırlıkların ve önyargıların güncellenmesi için kullanılır
+            \item Backpropagation: Derin sinir ağlarında hata ve türevlerin geriye doğru yayılmasıyla ağırlıkların güncellenmesi süreci, temel olarak regresyon optimizasyonuna dayanır
+        \end{itemize}
+        \item Pratik örnekler ve öğretmenlerin deneyebileceği basit regresyon projeleri
+        \begin{itemize}
+            \item Ev fiyatlarının tahmin edilmesi: Doğrusal regresyon kullanarak sürekli değerlerin tahmin edilmesi
+            \item E-postaların spam olup olmadığının tespiti: Lojistik regresyon kullanarak ikili sınıflandırma problemlerinin çözümü
+        \end{itemize}
+        \item Python kullanarak regresyon modelleri oluşturma
+        \begin{itemize}
+            \item Optimizasyon algoritmaları ve hiperparametrelerin ayarlanması
+            \item Regresyon modellerinin değerlendirilmesi ve performans metrikleri
+        \end{itemize}
+    \end{itemize}
+
+    
+    \item Derin Sinir Ağları (DNN) (4 saat)
+    \begin{itemize}
+        \item Yapay sinir ağları ve DNN temelleri
+        \begin{itemize}
+            \item Yapay sinir ağları: İnsan beyninin işleyişine benzer şekilde öğrenen ve tahminlerde bulunan algoritmalar
+            \item Derin sinir ağları: Çok katmanlı yapay sinir ağları, karmaşık özellikler öğrenme yeteneği
+            \item Katmanlar ve nöronlar: DNN'deki temel yapı taşları, her bir katman farklı özellikler öğrenir
+        \end{itemize}
+        \item Aktivasyon fonksiyonları, kayıp fonksiyonları ve optimizasyon teknikleri
+        \begin{itemize}
+            \item Aktivasyon fonksiyonları: ReLU, Sigmoid, Tanh gibi nöronların çıktılarını dönüştüren fonksiyonlar
+            \item Kayıp fonksiyonları: Mean Squared Error, Cross-Entropy gibi DNN performansını ölçen ve optimizasyon için kullanılan fonksiyonlar
+            \item Optimizasyon teknikleri: Stokastik Gradyan İnişi (SGD), Adam gibi ağırlıkların ve önyargıların güncellenmesi için kullanılan yöntemler
+        \end{itemize}
+        \item PyTorch kullanarak basit DNN modelleri oluşturma
+        \begin{itemize}
+            \item PyTorch ile DNN modelinin tanımlanması ve eğitilmesi
+            \item Katmanlar, nöronlar ve aktivasyon fonksiyonlarının seçimi
+            \item Modelin hiperparametrelerinin ayarlanması ve performansının değerlendirilmesi
+        \end{itemize}
+        \item Pratik örnekler ve öğretmenlerin deneyebileceği basit DNN projeleri
+        \begin{itemize}
+            \item El yazısı rakam tanıma: MNIST veri kümesi kullanarak derin sinir ağları ile görüntü sınıflandırma
+            \item Metin sınıflandırma: Film yorumlarının duygu analizi için derin sinir ağları kullanma
+            \item Ses tanıma: Basit komutları tanımak için derin sinir ağları kullanarak ses sınıflandırma
+        \end{itemize}
+    \end{itemize}
+
+    
+    \item Evrişimli Sinir Ağları (CNN) (3 saat)
+    \begin{itemize}
+        \item CNN temelleri ve görüntü sınıflandırma
+        \begin{itemize}
+            \item Evrişimli katmanlar: Görüntü verisinden özellikleri öğrenen ve filtreler kullanan katmanlar
+            \item Havuzlama katmanları: Görüntü boyutunu küçültmek ve bilgi yoğunlaştırmak için kullanılan katmanlar
+            \item Tam bağlantılı katmanlar: Öğrenilen özellikleri kullanarak sınıflandırma işlemini gerçekleştiren katmanlar
+            \item Görüntü sınıflandırma: Evrişimli sinir ağları kullanarak görüntülerin etiketlerine göre sınıflandırılması
+        \end{itemize}
+        \item Öğretmenlerin deneyebileceği basit CNN projeleri
+        \begin{itemize}
+            \item Evrişimli sinir ağları ile daha karmaşık görüntü sınıflandırma problemleri (ör. CIFAR-10, CIFAR-100)
+            \item Yüz tanıma: CNN'ler kullanarak yüzlerin tanınması ve kişilerin tespit edilmesi
+            \item Görüntü segmentasyonu: CNN'ler kullanarak görüntülerin bölümlere ayrılması ve nesnelerin sınırlarının belirlenmesi
+        \end{itemize}
+        \item PyTorch kullanarak basit CNN modelleri oluşturma
+        \begin{itemize}
+            \item PyTorch ile CNN modelinin tanımlanması ve eğitilmesi
+            \item Evrişimli, havuzlama ve tam bağlantılı katmanların seçimi ve kullanımı
+            \item Modelin hiperparametrelerinin ayarlanması ve performansının değerlendirilmesi
+        \end{itemize}
+    \end{itemize}
+
+    
+    \item YOLO ve Nesne Algılama (4 saat)
+    \begin{itemize}
+        \item Nesne algılama ve YOLO algoritması hakkında bilgi
+        \begin{itemize}
+            \item Nesne algılama: Görüntülerdeki nesnelerin sınıflandırılması ve konumlarının belirlenmesi
+            \item YOLO (You Only Look Once): Hızlı ve gerçek zamanlı nesne algılama için geliştirilen bir CNN mimarisi
+            \item YOLO'nun avantajları: Hızlı çalışma süresi, doğru tahminler ve gerçek zamanlı uygulamalara uygunluk
+        \end{itemize}
+        \item PyTorch ve YOLOv8 kullanarak nesne algılama uygulamaları
+        \begin{itemize}
+            \item YOLOv8 modelinin PyTorch ile yüklenmesi ve kullanılması
+            \item Önceden eğitilmiş YOLOv8 modelini kullanarak nesne algılama gerçekleştirme
+            \item YOLOv8 modelinin kendi veri kümesi üzerinde eğitilmesi ve ayarlanması
+        \end{itemize}
+        \item Öğretmenlerin deneyebileceği basit nesne algılama projeleri
+        \begin{itemize}
+            \item Gerçek zamanlı trafik işaretleri tanıma: YOLOv8 kullanarak trafik işaretlerinin tespit edilmesi ve sınıflandırılması
+            \item Yüz maskesi tespiti: YOLOv8 kullanarak insanların yüz maskesi takıp takmadığının belirlenmesi
+            \item Hayvan türlerinin sınıflandırılması: YOLOv8 ile doğadaki hayvanların tespit edilmesi ve türlerine göre sınıflandırılması
+        \end{itemize}
+    \end{itemize}
+
+    
+    \item Doğal Dil İşleme (NLP) (4 saat)
+    \begin{itemize}
+        \item NLP temelleri ve örnek uygulamalar
+        \begin{itemize}
+            \item Doğal Dil İşleme (NLP): İnsan diliyle ilgili bilgi işlem ve anlama problemlerini çözmeye yönelik alan
+            \item NLP'nin alt disiplinleri: Dil modelleme, sözdizimi analizi, anlamsal analiz ve duygu analizi
+            \item NLP uygulama örnekleri: Metin sınıflandırma, makine çevirisi, özetleme ve sohbet botları
+        \end{itemize}
+        \item Duygu analizi, metin sınıflandırma ve özetleme gibi temel NLP problemleri
+        \begin{itemize}
+            \item Duygu analizi: Metinlerdeki duyguları ve tonları tespit etme
+            \item Metin sınıflandırma: Metinleri belirli kategorilere göre sınıflandırma
+            \item Özetleme: Metinlerin ana fikirlerini kısa ve öz bir şekilde özetleme
+        \end{itemize}
+        \item Pratik NLP projeleri ve PyTorch kullanarak öğretmenlerin deneyebileceği basit NLP uygulamaları
+        \begin{itemize}
+            \item TODO
+        \end{itemize}
+    \end{itemize}
+
+    
+    \item Yapay Zeka Etik ve Sorumlulukları (2 saat)
+    \begin{itemize}
+        \item Yapay zeka etiği, önyargı ve veri gizliliği
+        \begin{itemize}
+            \item Algoritmik önyargı: Yapay zeka sistemlerinin veri ve algoritmalar nedeniyle önyargılı sonuçlar üretmesi
+            \item Veri gizliliği: Kişisel verilerin korunması ve güvence altına alınması
+            \item Karar verme süreçlerinin şeffaflığı: Yapay zeka sistemlerinin kararlarının açıklanabilir ve anlaşılır olması
+        \end{itemize}
+        \item Öğrencilere yapay zeka konularını öğretirken dikkate alınması gereken etik konular
+        \begin{itemize}
+            \item Öğrencilere yapay zeka sistemlerinin etik ve sosyal etkilerinin öğretilmesi
+            \item Öğrencilere doğru ve etik veri kullanımı konusunda bilgi verilmesi
+            \item Yapay zeka teknolojilerinin olumlu ve olumsuz potansiyel etkilerine dikkat çekmek
+        \end{itemize}
+    \end{itemize}
+    
+    \item Öğretmenler için Yapay Zeka Proje Fikirleri (2 saat)
+    \begin{itemize}
+        \item Öğretmenlerin kendi derslerinde uygulayabileceği yapay zeka proje önerileri
+        \begin{itemize}
+            \item Öğrencilere yönelik sınıf içi ve ödev projeleri
+            \item Disiplinler arası yapay zeka projeleri: Yapay zeka tekniklerinin farklı derslerde kullanılması
+            \item Yapay zeka ile ilgili etkinlikler ve yarışmalar düzenlemek
+        \end{itemize}
+        \item Kursun değerlendirilmesi ve geri bildirim alınması
+        \begin{itemize}
+            \item Öğretmenlerin kurs hakkındaki düşüncelerini ve önerilerini toplama
+            \item Kursun başarısını değerlendirmek için anketler ve geri bildirim formları kullanma
+            \item Gelecekte düzenlenecek eğitimler için öğretmenlerden alınan geri bildirimleri dikkate alma
+        \end{itemize}
+    \end{itemize}
+
+    \item Yararlı Uygulama, Tool ve Websiteleri Tanıtımı (2 saat)
+    \begin{itemize}
+        \item Online yapay zeka ve makine öğrenimi dersleri: Coursera, Udacity, edX, fast.ai
+        \item Yapay zeka ve makine öğrenimi kaynakları ve topluluklar: Machine Learning Mastery, Google AI Blog, AI Hub, Kaggle
+        \item Yapay zeka ve makine öğrenimi araçları ve kütüphaneler: TensorFlow, Keras, Scikit-learn, OpenAI Gym, PyTorch, Netron, Ultralytics YOLOv8, NVIDIA Jetson Inference, ChatGPT, Google BERT
+        \item Veri seti kaynakları: UCI Machine Learning Repository, Google Dataset Search, Data.gov, Kaggle Datasets
+        \item Yapay zeka ve makine öğrenimi görselleştirme ve deney araçları: Google Colab, Jupyter Notebook, TensorBoard, MLflow
+        \item Otomatik makine öğrenimi (AutoML) platformları: Google AutoML, H2O.ai, DataRobot, Microsoft Azure AutoML
+        \item Yapay zeka ve makine öğrenimi modellerini dağıtmak için araçlar: TensorFlow Serving, MLflow Model Serving, NVIDIA Triton Inference Server, TorchServe
+        \item Yapay zeka ve makine öğrenimi için önceden eğitilmiş modeller ve API'ler: TensorFlow Hub, Hugging Face Transformers, OpenAI API, IBM Watson API
+        \item Yapay zeka ve makine öğrenimi güncellemeleri ve haberleri için kaynaklar: AI Weekly, Import AI, AI Podcasts, Arxiv Sanity
+    \end{itemize}
+
+
+\end{enumerate}
+
+\end{document}
